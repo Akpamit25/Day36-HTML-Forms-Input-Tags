@@ -29,10 +29,8 @@ form{
 div{
     margin-bottom: 20px;
     display: flex;
-    /* justify-content: space-evenly; */
     justify-content: space-between;
     align-items: center;
-    /* align-content: flex-start; */
 }
 
 label, input, button{
@@ -59,5 +57,5 @@ button{
 error-output{
     font-size: 12px;
     font-style: italic;
-    color: red;
+    color: rgb(230, 55, 55);
 }
