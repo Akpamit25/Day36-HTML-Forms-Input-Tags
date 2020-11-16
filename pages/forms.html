@@ -16,18 +16,19 @@
         </header>
         <div>
             <label for="text">Text Input For Name:</label>
-            <input type="text" id="text" name="text">
+            <input type="text" id="text" name="text" required>
             <error-output class="text-error" for="text"></error-output>
         </div>
 
         <div>
             <label for="pwd">Password Input Type:</label>
             <input type="password" id="pwd" name="pwd" required>
+            <error-output class="password-error" for="pwd"></error-output>
         </div>
 
         <div>
             <label for="email">Email Input Type:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
             <error-output class="email-error" for="email"></error-output>
         </div>
 
@@ -43,7 +44,7 @@
 
         <div>
             <label for="tel">Tel Input Type:</label>
-            <input type="tel" id="tel" name="tel">
+            <input type="tel" id="tel" name="tel" required>
             <error-output class="phone-error" for="tel"></error-output>
         </div>
 
@@ -54,13 +55,13 @@
 
         <div class="nativeDateTimePicker">
             <label for="startDate">Choose a Date & Time:</label>
-            <input type="datetime-local" id="startDate" name="startDate">
+            <input type="datetime-local" id="startDate" name="startDate" required>
             <span class="validity"></span>
         </div>
 
         <div>
             <label for="salary">Choose Your Salary:</label>
-            <input type="range" id="salary" name="salary" min="300000" max="500000" step="100" value="400000">
+            <input type="range" id="salary" name="salary" min="300000" max="500000" step="100" value="400000" required>
             <output class="salary-output" for="salary">400000</output>
         </div>
 
