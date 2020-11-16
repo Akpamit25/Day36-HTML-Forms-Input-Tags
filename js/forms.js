@@ -41,7 +41,7 @@
           const pass = document.querySelector('#pwd');
           const passError = document.querySelector('.password-error');
           pass.addEventListener('input', function () {
-              let passRegex = RegExp('^[a-zA-Z0-9]{8,}$');
+              let passRegex = RegExp('^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=\\.~`])(.){8,}$');
               if (passRegex.test(pass.value))
                   passError.textContent = "";
               else passError.textContent = "Invalid Password";
