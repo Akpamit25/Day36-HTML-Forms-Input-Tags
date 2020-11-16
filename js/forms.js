@@ -27,6 +27,16 @@
             else emailError.textContent = "Incorrect Email-Id";
         });
 
+          // Validating Phone Entry
+          const phone = document.querySelector('#tel');
+          const phoneError = document.querySelector('.phone-error');
+          phone.addEventListener('input', function () {
+              let phoneRegex = RegExp("^[0-9]{2}[\\s][1-9]{1}[0-9]{9}$");
+              if (phoneRegex.test(phone.value))
+                  phoneError.textContent = "";
+              else phoneError.textContent = "Invalid Phone Number";
+          });
+
 
 
         
